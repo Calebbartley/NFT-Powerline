@@ -1,17 +1,17 @@
 import React from 'react'
 import CollectionCard from './CollectionCard'
 
-const Cardlist = ({powerlineData}) => {
+const CardList = ({powerlineData}) => {
   return (
     <div className='cardList' >
-        {powerlineData.map(card => (
+        {powerlineData.map(powerline => (
             <div>
                 <CollectionCard
-                key={card.token_id}
-                id={card.token_id}
-                name={card.name}
-                traits={card.traits}
-                image={card.image_original_url}
+                key={powerline.token_id}
+                id={powerline.token_id}
+                name={powerline.name}
+                traits={powerline.traits}
+                image={powerline.image_original_url}
                 />
             </div>
         ))}
@@ -19,4 +19,4 @@ const Cardlist = ({powerlineData}) => {
   )
 }
 
-export default Cardlist;
+export default CardList;

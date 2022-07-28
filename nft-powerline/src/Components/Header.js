@@ -24,7 +24,7 @@ const Header = () => {
         </div>
         <div className='headerActions' >
           <div className='themeSwitchContainer' >
-            <img src={bulb}/>
+            <img src={bulb} alt='' />
           </div>
         </div>
         <div className='loginButton' >GET IN</div>

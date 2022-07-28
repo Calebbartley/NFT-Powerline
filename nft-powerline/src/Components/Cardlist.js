@@ -1,10 +1,10 @@
 import React from 'react'
 import CollectionCard from './CollectionCard'
 
-const Cardlist = ({cardListData}) => {
+const Cardlist = ({powerlineData}) => {
   return (
     <div className='cardList' >
-        {cardListData.map(card => (
+        {powerlineData.map(card => (
             <div>
                 <CollectionCard
                 key={card.token_id}

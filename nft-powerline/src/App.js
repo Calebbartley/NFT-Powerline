@@ -30,7 +30,8 @@ return (
     traits={[{'value': 7}]}
     image='https://lh3.googleusercontent.com/l8-sK4SSZ_hvEOrxYSBAyWukROeUny3hxbVMibbJMG9xclOc-Sntx5Q50c1hbitG897jSHViVC1Fd33nECOOcF4Zrp7WOmRhYelyxg=s0' 
     />
-    <Cardlist cardListData={cardListData} />
+    <Cardlist powerlineData={powelineData} />
+
   </div>
 
 )

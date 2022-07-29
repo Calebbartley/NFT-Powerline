@@ -2,5 +2,7 @@
     "cSpell.words": [
         "poweline",
         "powerline"
-    ]
+    ],
+    "editor.cursorBlinking": "smooth",
+    "files.autoSave": "afterDelay"
 }

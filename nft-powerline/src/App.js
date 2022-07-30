@@ -11,14 +11,12 @@ const [powelineData, setPowerlineData] = useState([])
 
 useEffect(()=> {
   const getMyNfts = async () => {
-    const openseaData = await axios.get(
-      'https://testnets-api.opensea.io/api/v1/assets?asset_contract_address=0xb094c25abbfb45a37f195a1bcfc25029481f6acforder_direction=asc'
-      )
+    const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0xB094c25AbBFb45A37F195a1BCFC25029481F6Acforder_direction=asc")
     console.log(openseaData.data.assets)
     setPowerlineData(openseaData.data.assets)
   }
 
-  // return getMyNfts()
+  //  getMyNfts()
 },[])
 
 return (

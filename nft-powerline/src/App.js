@@ -5,19 +5,19 @@ import {useState, useEffect} from 'react'
 import axios from 'axios';
 import CardList from './Components/CardList';
 
-
 function App() {
-const [powelineData, setPowerlineData] = useState([])
+  const [powerLineData, setPowerLineData] = useState([]);
 
-useEffect(()=> {
-  const getMyNfts = async () => {
-    const openseaData = await axios.get("https://testnets-api.opensea.io/assets?asset_contract_address=0xB094c25AbBFb45A37F195a1BCFC25029481F6Acforder_direction=asc")
-    console.log(openseaData.data.assets)
-    setPowerlineData(openseaData.data.assets)
-  }
+  useEffect(() => {
+    const getMyNfts = async () => {
+      const openseaData = await axios.get(
+        'https://testnets-api.opensea.io/assets?asset_contract_address=0x78272EFB09bBfBEa2b2556d903d2Bc438ab6cA14&order_direction=asc'
+      );
+      console.log(openseaData.data.assets);
 
-  //  getMyNfts()
-},[])
+    }
+    return getMyNfts();
+  }, []);
 
 return (
   <div className='app'>
@@ -28,7 +28,7 @@ return (
     traits={[{'value': 7}]}
     image='https://lh3.googleusercontent.com/l8-sK4SSZ_hvEOrxYSBAyWukROeUny3hxbVMibbJMG9xclOc-Sntx5Q50c1hbitG897jSHViVC1Fd33nECOOcF4Zrp7WOmRhYelyxg=s0' 
     />
-    <CardList powerlineData={powelineData} />
+    <CardList powerlineData={[]} />
 
   </div>
 

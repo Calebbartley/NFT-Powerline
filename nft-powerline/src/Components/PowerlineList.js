@@ -1,5 +1,6 @@
 import React from 'react'
 import CollectionCard from './CollectionCard'
+import './PowerlineList.css'
 
 
 const PowerlineList = ({powerLineData}) => {

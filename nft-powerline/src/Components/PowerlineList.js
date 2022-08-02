@@ -3,11 +3,11 @@ import CollectionCard from './CollectionCard'
 import './PowerlineList.css'
 
 
-const PowerlineList = ({powerLineData}) => {
+const PowerlineList = ({powerLineData, setSelectedPowerline}) => {
   return (
     <div className='powerlineList' >
         {powerLineData.map(powerline => (
-            <div>
+            <div onClick={()=> setSelectedPowerline(powerline.token_id) } >
                 <CollectionCard
                 key={powerline.token_id}
                 id={powerline.token_id}

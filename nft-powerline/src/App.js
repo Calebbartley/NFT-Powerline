@@ -8,6 +8,7 @@ import Main from './Components/Main';
 
 function App() {
   const [powerLineData, setPowerLineData] = useState([]);
+  const [selectedPowerline, setSelectedPowerline] = useState(0);
 
   useEffect(() => {
     const getMyNfts = async () => {
@@ -25,7 +26,7 @@ return (
   <div className='app'>
     <Header/>
     <Main/>
-    <PowerlineList powerLineData={powerLineData}/>
+    <PowerlineList powerLineData={powerLineData} setSelectedPowerline={setSelectedPowerline} />
 
   </div>
 

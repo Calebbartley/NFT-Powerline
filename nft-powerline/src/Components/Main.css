@@ -21,10 +21,80 @@
     margin-right: 20px;
 }
 
+.selectedPowerline{
+    object-fit: contain;
+    max-width: min(30vw, 40vh);
+    max-height: 30vw
+}
+
 .powerlineDetails{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0.75;
+    flex: 2;
 }
 
+.title{
+    font-size: 96px;
+    font-weight: 800;
+}
+
+.itemNumber{
+    color: #a1a5b0;
+    font-size: 74px;
+    align-self: center;
+}
+
+.owner{
+    display: flex;
+    margin: 20px 0;
+    align-self: center;
+    height: 50px;
+}
+
+
+.owner > div{
+    margin: 0 5px;
+}
+
+.ownerImageContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+    align-self: center;
+}
+
+.ownerImageContainer > img{
+    height: 100%;
+    width: 100%;
+}
+
+.ownerDetails{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.ownerNameAndHandle{
+    flex: 1;
+}
+
+.ownerHandle{
+    color: #00ebfe;
+}
+
+.ownerLink{
+    padding: 12px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #00ebfe;
+    margin: 0 0 0 10px;
+}
+
+.ownerLink > img{
+    height: 100%;
+    width: 100%;
+}

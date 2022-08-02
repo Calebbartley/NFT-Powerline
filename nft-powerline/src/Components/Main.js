@@ -21,7 +21,7 @@ const Main = () => {
             </div>
             <div className='owner' >
                 <div className='ownerImageContainer'>
-                    <img src={'https://testnets.opensea.io/assets/rinkeby/0x78272efb09bbfbea2b2556d903d2bc438ab6ca14/2'} alt='' />
+                    <img src={'https://testnets.opensea.io/assets/rinkeby/0x78272efb09bbfbea2b2556d903d2bc438ab6ca14/0https://testnets.opensea.io/assets/rinkeby/0x78272efb09bbfbea2b2556d903d2bc438ab6ca14/0'} alt='' />
                 </div>
                 <div className='ownerDetails'>
                     <div className='ownerNameAndHandle'>

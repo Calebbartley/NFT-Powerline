@@ -24,7 +24,7 @@
 .selectedPowerline{
     object-fit: contain;
     max-width: min(30vw, 40vh);
-    max-height: 30vw
+    max-height: 30vw;
 }
 
 .powerlineDetails{
@@ -41,7 +41,8 @@
 
 .itemNumber{
     color: #a1a5b0;
-    font-size: 74px;
+    flex-direction: column;
+    font-size: 72px;
     align-self: center;
 }
 

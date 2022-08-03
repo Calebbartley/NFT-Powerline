@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './Components/Header';
-import CollectionCard from './Components/CollectionCard';
 import {useState, useEffect} from 'react'
 import axios from 'axios';
 import PowerlineList from './Components/PowerlineList';
@@ -10,6 +9,8 @@ function App() {
   const [powerLineData, setPowerLineData] = useState([]);
   const [selectedPowerline, setSelectedPowerline] = useState(0);
 
+  
+
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
@@ -17,19 +18,23 @@ function App() {
       );
       console.log(openseaData.data.assets);
       setPowerLineData(openseaData.data.assets);
-
     }
     getMyNfts();
   }, []);
 
 return (
-  <div className='app'>
-    <Header/>
-    <Main/>
-    <PowerlineList powerLineData={powerLineData} setSelectedPowerline={setSelectedPowerline} />
-
-  </div>
-
-)
+     <div className='app'>
+      <Header/>
+      {powerLineData.length > 0 && (
+          <>
+            <Main powerLineData={powerLineData} selectedPowerline={selectedPowerline}/>
+            <PowerlineList 
+            powerLineData={powerLineData} 
+            setSelectedPowerline={setSelectedPowerline} 
+            />
+          </>
+        )}
+    </div>
+  )
 }
 export default App;
